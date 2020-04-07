@@ -1,0 +1,93 @@
+Index: README.md
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- README.md	(revision f922a8b0e8f1b4e2fcd7663458084b2ac5138852)
++++ README.md	(date 1586246570958)
+@@ -1,1 +1,1 @@
+-# wise01
+\ No newline at end of file
++# wise01 本地修改
+\ No newline at end of file
+Index: demo/src/main/resources/application.properties
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>GBK
+===================================================================
+--- demo/src/main/resources/application.properties	(date 1586246515825)
++++ demo/src/main/resources/application.properties	(date 1586246515825)
+@@ -0,0 +1,1 @@
++
+Index: demo/pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- demo/pom.xml	(date 1586246517199)
++++ demo/pom.xml	(date 1586246517199)
+@@ -0,0 +1,43 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
++         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
++    <modelVersion>4.0.0</modelVersion>
++    <parent>
++        <groupId>org.springframework.boot</groupId>
++        <artifactId>spring-boot-starter-parent</artifactId>
++        <version>2.1.13.RELEASE</version>
++        <relativePath/> <!-- lookup parent from repository -->
++    </parent>
++    <groupId>com.example</groupId>
++    <artifactId>demo</artifactId>
++    <version>0.0.1-SNAPSHOT</version>
++    <name>demo</name>
++    <description>Demo project for Spring Boot</description>
++
++    <properties>
++        <java.version>1.8</java.version>
++    </properties>
++
++    <dependencies>
++        <dependency>
++            <groupId>org.springframework.boot</groupId>
++            <artifactId>spring-boot-starter-web</artifactId>
++        </dependency>
++
++        <dependency>
++            <groupId>org.springframework.boot</groupId>
++            <artifactId>spring-boot-starter-test</artifactId>
++            <scope>test</scope>
++        </dependency>
++    </dependencies>
++
++    <build>
++        <plugins>
++            <plugin>
++                <groupId>org.springframework.boot</groupId>
++                <artifactId>spring-boot-maven-plugin</artifactId>
++            </plugin>
++        </plugins>
++    </build>
++
++</project>
+Index: demo/src/main/java/com/example/demo/DemoApplication.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- demo/src/main/java/com/example/demo/DemoApplication.java	(date 1586246517865)
++++ demo/src/main/java/com/example/demo/DemoApplication.java	(date 1586246517865)
+@@ -0,0 +1,13 @@
++package com.example.demo;
++
++import org.springframework.boot.SpringApplication;
++import org.springframework.boot.autoconfigure.SpringBootApplication;
++
++@SpringBootApplication
++public class DemoApplication {
++
++    public static void main(String[] args) {
++        SpringApplication.run(DemoApplication.class, args);
++    }
++
++}
